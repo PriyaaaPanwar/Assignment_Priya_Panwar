@@ -1,0 +1,371 @@
+/* src/styles.css */
+.node {
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+}
+
+.node-header {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.convert-format-node {
+  background-color: #4caf50; /* Green for Text Node */
+  border-color: #388e3c; /* Darker green border */
+}
+
+.input-node {
+  background-color: #ff9800; /* Orange for Input Node */
+  border-color: #f57c00; /* Darker orange border */
+}
+
+.output-node {
+  background-color: #607d8b; /* Blue-grey for Output Node */
+  border-color: #455a64; /* Darker blue-grey border */
+}
+
+.wait-node {
+  background-color: #2196f3; /* Blue for Wait Node */
+  border-color: #1976d2; /* Darker blue border */
+}
+
+.filterdata-node {
+  background-color: #9c27b0; /* Purple for Filter Data Node */
+  border-color: #7b1fa2; /* Darker purple border */
+}
+
+/* Wrapper for the entire node */
+.wrapper {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  max-width: 300px;
+  border: 1px solid black;
+}
+
+/* Inner container */
+.inner {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input field styling */
+.text-field {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* Textarea styling */
+.text-area {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+/* Button styling */
+.btn-send {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-send:hover {
+  background-color: #0056b3;
+}
+
+/* Response and error messages */
+.response,
+.error {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.response {
+  background-color: #e8f5e9;
+  border: 1px solid #c8e6c9;
+}
+
+.response h4 {
+  margin: 0;
+  color: #2e7d32;
+}
+
+.error {
+  background-color: #fce4ec;
+  border: 1px solid #f48fb1;
+}
+
+.error h4 {
+  margin: 0;
+  color: #c62828;
+}
+
+.react-flow__node-tools .react-flow__node-wait {
+  border: 1px solid #333;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.react-flow__node-toolbar .react-flow__node-wait {
+  border-radius: 5px;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.08);
+}
+
+.react-flow__node-toolbar button .react-flow__node-wait {
+  border: 1px solid #eee;
+  background: white;
+  cursor: pointer;
+}
+
+.react-flow__node-toolbar .react-flow__node-wait button:hover {
+  background: #f5f5f6;
+}
+
+.react-flow__node-toolbar .react-flow__node-wait button:first-child {
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+
+.react-flow__node-toolbar .react-flow__node-wait button:last-child {
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+}
+
+.react-flow__node-resizer .react-flow__node-wait {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.react-flow__node-resizer .react-flow__handle,
+.react-flow__node-circle .react-flow__handle,
+.react-flow__node-textinput .react-flow__handle {
+  background: #bbb;
+  border-radius: 0;
+  width: 8px;
+  height: 4px;
+  border: none;
+  min-width: 2px;
+  min-height: 2px;
+}
+
+.react-flow__node-resizer .react-flow__handle-bottom,
+.react-flow__node-wait .react-flow__handle-bottom,
+.react-flow__node-textinput .react-flow__handle-bottom {
+  bottom: -5px;
+  transform: none;
+  border-radius: 0 0 2px 2px;
+}
+
+.react-flow__node-resizer .react-flow__handle-top,
+.react-flow__node-wait .react-flow__handle-top,
+.react-flow__node-textinput .react-flow__handle-top {
+  top: -5px;
+  transform: none;
+  border-radius: 2px 2px 0 0;
+}
+
+.react-flow__node-resizer .react-flow__handle-left,
+.react-flow__node-circle .react-flow__handle-left,
+.react-flow__node-textinput .react-flow__handle-left {
+  height: 8px;
+  width: 4px;
+  left: -5px;
+  border-radius: 2px 0 0 2px;
+}
+
+.react-flow__node-annotation .react-flow__node-wait {
+  font-size: 16px;
+  width: 200px;
+  color: rgb(158, 118, 255);
+  font-family: monospace;
+  position: absolute;
+}
+
+.react-flow__node-annotation .arrow {
+  position: absolute;
+  font-size: 24px;
+}
+/* Sidebar styles */
+.sidebar {
+  background-color: #dcdde1;
+  transition: width 0.3s ease;
+  width: 250px;
+  height: 100%;
+}
+
+.sidebar.collapsed {
+  width: 50px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+}
+
+.toggle-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar-content {
+  padding: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-content.hidden {
+  display: none;
+}
+
+.draggable-node {
+  background-color: white;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.execute-btn {
+  display: block;
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.execute-btn:hover {
+  background-color: #357abd;
+}
+
+/* Main content area should expand when sidebar is collapsed */
+.main-content {
+  transition: margin-left 0.3s ease;
+  margin-left: 250px;
+}
+
+.main-content.full {
+  margin-left: 50px;
+}
+/* Navbar Container */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Navbar Content */
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.workflow-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.workflow-info h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Workflow Dropdown */
+.workflow-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.workflow-dropdown {
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #333;
+  transition: border 0.3s ease;
+}
+
+.workflow-dropdown:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.button-primary {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .workflow-actions {
+    justify-content: center;
+  }
+}
